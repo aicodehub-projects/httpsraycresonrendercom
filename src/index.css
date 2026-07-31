@@ -1,0 +1,274 @@
+@import "tailwindcss";
+
+@theme {
+  /* === RayCres Brand Colors (from reference site) === */
+  --color-navy-950: #060D1B;
+  --color-navy-900: #0A1B33;
+  --color-navy-800: #0E2845;
+  --color-navy-700: #0E3B7A;
+  --color-navy-600: #1352A0;
+  --color-navy-500: #1A6BC4;
+  --color-navy-400: #2B8AE0;
+  --color-navy-300: #5AADF0;
+  --color-navy-200: #93CCFA;
+  --color-navy-100: #C5E3FD;
+  --color-navy-50: #EAF1FF;
+
+  /* Accent: Bright Cyan */
+  --color-accent-500: #0FAAFF;
+  --color-accent-400: #3DBCFF;
+  --color-accent-300: #6FD0FF;
+  --color-accent-200: #A5E2FF;
+  --color-accent-100: #D6F1FF;
+
+  /* CTA: Emerald Green */
+  --color-emerald-700: #047857;
+  --color-emerald-600: #059669;
+  --color-emerald-500: #10B981;
+  --color-emerald-400: #34D399;
+  --color-emerald-300: #6EE7B7;
+  --color-emerald-200: #A7F3D0;
+  --color-emerald-100: #D1FAE5;
+  --color-emerald-50: #ECFDF5;
+
+  /* Neutrals */
+  --color-slate-950: #020617;
+  --color-slate-900: #0F172A;
+  --color-slate-800: #1E293B;
+  --color-slate-700: #334155;
+  --color-slate-600: #475569;
+  --color-slate-500: #64748B;
+  --color-slate-400: #94A3B8;
+  --color-slate-300: #CBD5E1;
+  --color-slate-200: #E2E8F0;
+  --color-slate-100: #F1F5F9;
+  --color-slate-50: #F8FAFC;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* === Base Reset === */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: #060D1B;
+  color: #E2E8F0;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* === Glassmorphism === */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-nav {
+  background: rgba(6, 13, 27, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* === Gradient Text === */
+.gradient-text {
+  background: linear-gradient(135deg, #0FAAFF, #059669);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-hero {
+  background: linear-gradient(135deg, #FFFFFF 0%, #C5E3FD 50%, #0FAAFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* === Buttons === */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #059669, #0E3B7A);
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(5, 150, 105, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(5, 150, 105, 0.45);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* === Card Hover Effect === */
+.card-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  border-color: rgba(15, 170, 255, 0.2);
+  box-shadow: 0 20px 60px rgba(15, 170, 255, 0.1), 0 0 0 1px rgba(15, 170, 255, 0.08);
+}
+
+/* === Section Backgrounds === */
+.section-dark {
+  background: #060D1B;
+}
+
+.section-darker {
+  background: linear-gradient(180deg, #060D1B 0%, #0A1B33 100%);
+}
+
+.section-alt {
+  background: linear-gradient(180deg, #0A1B33 0%, #0E2845 50%, #0A1B33 100%);
+}
+
+.section-light {
+  background: #F8FAFC;
+}
+
+/* === Divider === */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(15, 170, 255, 0.2), transparent);
+}
+
+/* === Marquee Animation === */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* === Glow Effects === */
+.glow-blue {
+  box-shadow: 0 0 80px rgba(15, 170, 255, 0.12);
+}
+
+.glow-green {
+  box-shadow: 0 0 80px rgba(5, 150, 105, 0.12);
+}
+
+/* === Scrollbar === */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060D1B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 170, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(15, 170, 255, 0.35);
+}
+
+/* === Selection === */
+::selection {
+  background: rgba(15, 170, 255, 0.3);
+  color: white;
+}
+
+/* === Responsive Container === */
+.container-custom {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+  .container-custom {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-custom {
+    padding: 0 48px;
+  }
+}
+
+/* === Badge === */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  background: rgba(15, 170, 255, 0.08);
+  border: 1px solid rgba(15, 170, 255, 0.15);
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #0FAAFF;
+  letter-spacing: 0.5px;
+}
+
+/* === Floating Orbs === */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.orb-blue {
+  background: radial-gradient(circle, rgba(15, 170, 255, 0.3), transparent 70%);
+}
+
+.orb-green {
+  background: radial-gradient(circle, rgba(5, 150, 105, 0.25), transparent 70%);
+}

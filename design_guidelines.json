@@ -1,0 +1,58 @@
+{
+  "brand": "RayCres Technologies",
+  "tagline": "Engineering Tomorrow's Digital Edge",
+  "palette": {
+    "navy-950": "#060D1B",
+    "navy-900": "#0A1B33",
+    "navy-800": "#0E2845",
+    "navy-700": "#0E3B7A",
+    "navy-600": "#1352A0",
+    "blue-accent": "#0FAAFF",
+    "blue-light": "#EAF1FF",
+    "emerald-600": "#059669",
+    "emerald-500": "#10B981",
+    "emerald-light": "#ECFDF5",
+    "white": "#FFFFFF",
+    "slate-50": "#F8FAFC",
+    "slate-100": "#F1F5F9",
+    "slate-200": "#E2E8F0",
+    "slate-300": "#CBD5E1",
+    "slate-400": "#94A3B8",
+    "slate-500": "#64748B",
+    "slate-600": "#475569",
+    "slate-700": "#334155",
+    "slate-800": "#1E293B",
+    "slate-900": "#0F172A"
+  },
+  "gradients": {
+    "primary": "from #059669 to #0E3B7A",
+    "hero-bg": "from #060D1B via #0A1B33 to #0E2845",
+    "accent": "from #0FAAFF to #059669",
+    "card-glow": "from #0FAAFF/10 to #059669/5"
+  },
+  "typography": {
+    "fontFamily": "Inter, system-ui, -apple-system, sans-serif",
+    "hero-heading": "64-80px, weight 800, tracking tight",
+    "section-heading": "40-48px, weight 700, tracking tight",
+    "sub-heading": "20-24px, weight 600",
+    "body": "16-18px, weight 400, line-height 1.7",
+    "small": "14px, weight 500"
+  },
+  "spacing": {
+    "section-y": "120-140px",
+    "container-max": "1280px",
+    "card-padding": "32-40px",
+    "gap": "24-32px"
+  },
+  "effects": {
+    "glassmorphism": "background: rgba(255,255,255,0.03), backdrop-blur(16px), border: 1px solid rgba(255,255,255,0.06)",
+    "card-hover": "translateY(-4px), shadow-xl, border glow",
+    "gradient-text": "bg-clip-text text-transparent from emerald to cyan",
+    "glow": "box-shadow: 0 0 60px rgba(15,170,255,0.15)"
+  },
+  "sections": [
+    "Navbar", "Hero", "TrustedBy", "Services", "WhyChooseUs",
+    "IndustryExpertise", "CaseStudies", "TechStack", "Testimonials",
+    "Process", "Pricing", "FAQ", "Blog", "CTABanner", "Footer"
+  ]
+}
